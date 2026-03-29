@@ -30,3 +30,48 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     
 }
+
+:root {
+    --azul-claro: #3277b3;
+    --azul-oscuro: #254565;
+    --blanco: #ffffff;
+}
+
+/* --- ESTILOS DE LA NAVBAR --- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem 5%; /* Espaciado interno para que no toque los bordes */
+    background-color: var(--blanco);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
+    position: sticky; 
+    top: 0;
+}
+
+/* Estos son los estilos del menu */
+header nav ul {
+    display: flex;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    gap: 2rem; 
+}
+
+/* Y estos son los estilos de los links  */
+header nav ul li a {
+    text-decoration: none;
+    color: var(--azul-oscuro); 
+    font-family: 'Orbitron', sans-serif; 
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease; 
+    padding-bottom: 1px; 
+}
+
+header nav ul li a:hover {
+    color: var(--azul-claro); 
+    border-bottom: 2px solid var(--azul-claro); 
+}
