@@ -1,40 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logic Solutions</title>
-     <link rel="icon" href="./assets/logicLogo.png" type="image/png">
-    <link rel="stylesheet" href="./estilos/styles.css">
-</head>
-<body>
-   <header>
-        <a href="index.html">
-            <img src="./assets/logicLogo.png" alt="Logo de Logic Solutions" class="logo">
-        </a>    
-     <nav>
-         <ul>
-             <li><a href="index.html">Inicio</a></li>
-             <li><a href="servicios.html">Servicios</a></li>
-             <li><a href="proyectos.html">Portfolio</a></li>
-             <li><a href="contacto.html">Contacto</a></li>
-         </ul>
-    </nav>
-   </header> 
-   
-   <main>
-        <div class="contacto-container">
-            <h2>Contacto</h2>
-            <h4>¿Tienes un proyecto en mente o quieres saber más sobre nuestros servicios? ¡Estamos aquí para ayudarte! Contáctanos a través de los siguientes medios:</h4>
-            <ul>
-            <li id="texto"><strong>Sitio Web</strong> <a href="https://www.logicsolutions.com" target="_blank">www.logicsolutions.com</a></li>
-            <li id="texto"><strong>Email:</strong> <a href="mailto:logicsolutions@logicsolutions.com">logicsolutions@logicsolutions.com</a></li>
-            <li id="texto"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/logicsolutions" target="_blank">linkedin.com/company/logicsolutions</a></li>
-        </div> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Logic Solutions</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="./estilos/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="./assets/logicLogo.png"
+          alt="Logo de Logic Solutions"
+          class="logo"
+        />
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav>
+        <ul id="menu-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="proyectos.html">Portfolio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contacto-container">
+        <h2>Contacto</h2>
+        <div class="contacto-info">
+          <i
+            class="fa-solid fa-envelope-open-text"
+            style="
+              font-size: 3rem;
+              color: var(--azul-claro);
+              margin-bottom: 1rem;
+              display: block;
+              text-align: center;
+            "
+          ></i>
+          <p>
+            ¿Tienes un proyecto en mente o alguna consulta técnica? Estamos
+            listos para ayudarte.
+          </p>
+
+          <div class="email-box">
+            <strong>Correo Electrónico:</strong><br />
+            <a href="mailto:femateos@uade.edu.ar">femateos@uade.edu.ar</a>
+          </div>
+        </div>
+      </div>
     </main>
 
-   <footer>
-        <h5 id="texto">En Logic Solutions no solo entregamos código; construimos soluciones. LOGIC SOLUTIONS. Todos los derechos reservados.</h5>
-   </footer>
-</body>
+    <footer class="footer-profesional">
+      <div class="footer-content container">
+        <div class="footer-logo">
+          <h3>LOGIC SOLUTIONS</h3>
+          <p>Innovación real para el mundo digital.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2026 LOGIC SOLUTIONS. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menuLinks = document.getElementById("menu-links");
+
+      menuToggle.addEventListener("click", () => {
+        menuLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>

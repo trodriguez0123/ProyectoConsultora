@@ -2,12 +2,11 @@
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color:#58aae6;
+  background-color: #58aae6;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: sans-serif;
 }
-
 
 .contacto-container textarea {
   width: 100%;
@@ -19,103 +18,497 @@
   font-family: inherit;
 }
 
-/* --- ESTILOS DE LOS TITULOS --- */
-
 h1 {
   color: #114271;
   padding: 0.5rem;
   margin-bottom: 1rem;
-  font-family: 'Orbitron', sans-serif;
-    font-size: 2.8rem;
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    
-}
-
-h2 {
-  color: #114271;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  font-family: 'Orbitron', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-h3 {
-  color: #114271;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  font-family: 'Orbitron', sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-h4 {
-  color: #114271;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  font-family: 'Orbitron', sans-serif;
-    font-size: 0.9rem;
-    letter-spacing: 2px; 
-    text-transform: uppercase; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-/* --- ESTILOS DEL TEXTO --- */
-
-#texto {
-      color: black;
-  padding: 0.2rem;
-  margin-bottom: 1rem;
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 :root {
-    --azul-claro: #3277b3;
-    --azul-oscuro: #254565;
-    --blanco: #ffffff;
+  --azul-claro: #3277b3;
+  --azul-oscuro: #254565;
+  --blanco: #ffffff;
 }
 
 /* --- ESTILOS DE LA NAVBAR --- */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 1rem 5%; /* Espaciado interno para que no toque los bordes */
-    background-color: var(--blanco);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); 
-    position: sticky; 
-    top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 5%; /* Ajuste de barra angosta */
+  background-color: var(--blanco);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999; /* Parche de superposición */
+}
+
+header .logo {
+  height: 80px;
+  width: auto;
 }
 
 /* Estos son los estilos del menu */
 header nav ul {
-    display: flex;
-    list-style-type: none; 
-    margin: 0;
-    padding: 0;
-    gap: 2rem; 
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
 }
 
 /* Y estos son los estilos de los links  */
 header nav ul li a {
-    text-decoration: none;
-    color: var(--azul-oscuro); 
-    font-family: 'Orbitron', sans-serif; 
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease; 
-    padding-bottom: 1px; 
+  text-decoration: none;
+  color: var(--azul-oscuro);
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding-bottom: 1px;
 }
 
 header nav ul li a:hover {
-    color: var(--azul-claro); 
-    border-bottom: 2px solid var(--azul-claro); 
+  color: var(--azul-claro);
+  border-bottom: 2px solid var(--azul-claro);
+}
+
+/* --- NUEVOS ESTILOS PARA EL INDEX --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 5%;
+}
+
+h2,
+h3 {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  color: var(--azul-oscuro);
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--azul-claro);
+  margin: 10px auto 0;
+}
+
+.hero {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(37, 69, 101, 0.9) 0%,
+      rgba(50, 119, 179, 0.8) 100%
+    ),
+    url("../assets/hero-bg.jpg") no-repeat center center/cover;
+  color: var(--blanco);
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  color: var(--blanco);
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  opacity: 0.9;
+}
+
+.btn-principal,
+.btn-secundario {
+  display: inline-block;
+  padding: 12px 30px;
+  text-decoration: none;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-principal {
+  background-color: var(--azul-claro);
+  color: var(--blanco);
+}
+
+.btn-principal:hover {
+  background-color: #286092;
+  transform: translateY(-2px);
+}
+
+.btn-secundario {
+  background-color: transparent;
+  color: var(--azul-claro);
+  border: 2px solid var(--azul-claro);
+}
+
+.btn-secundario:hover {
+  background-color: var(--azul-claro);
+  color: var(--blanco);
+}
+
+.sobre-nosotros {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  background-color: #f9f9f9;
+}
+
+.texto-seccion,
+.imagen-seccion {
+  flex: 1;
+}
+
+.imagen-seccion img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.servicios-destacados {
+  background-color: var(--blanco);
+}
+
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.servicio-card {
+  background: var(--blanco);
+  padding: 2.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #eee;
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.servicio-card:hover {
+  box-shadow: 0 10px 30px rgba(50, 119, 179, 0.1);
+  border-color: rgba(50, 119, 179, 0.2);
+}
+
+.servicio-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.5rem;
+}
+
+.servicio-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--azul-oscuro);
+}
+
+.servicio-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.centrar-boton {
+  text-align: center;
+}
+
+.footer-profesional {
+  background-color: var(--azul-oscuro);
+  color: var(--blanco);
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo h3 {
+  color: var(--blanco);
+  margin-bottom: 0.5rem;
+}
+
+.footer-logo p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.footer-links h4 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+  color: var(--blanco);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  opacity: 1;
+  color: var(--azul-claro);
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.85rem;
+  opacity: 0.6;
+}
+
+/* =========================================
+   DISEÑO RESPONSIVE (MÓVILES Y TABLETS) 
+   ========================================= */
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--azul-oscuro);
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--blanco);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+
+  header nav ul li {
+    margin: 1rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding: 0 5%;
+    height: auto;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+
+  .sobre-nosotros {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+/* =========================================
+   PÁGINA DE SERVICIOS (INTERACTIVA)
+   ========================================= */
+
+.pagina-servicios {
+  padding-top: 2rem;
+}
+
+.cabecera-servicios {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.cabecera-servicios h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.cabecera-servicios h1::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--azul-claro);
+  margin: 15px auto 0;
+}
+
+.cabecera-servicios p {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+.grilla-servicios-interactiva {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tarjeta-interactiva {
+  background-color: var(--blanco);
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.icono-servicio {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  transition: transform 0.4s ease;
+}
+
+.icono-servicio i {
+  color: var(--azul-claro);
+}
+
+.tarjeta-interactiva h3 {
+  color: var(--azul-oscuro);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.descripcion-oculta {
+  max-height: 0;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.descripcion-oculta p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.btn-text {
+  color: var(--azul-claro);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.tarjeta-interactiva:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(37, 69, 101, 0.15);
+  border-color: var(--azul-claro);
+}
+
+.tarjeta-interactiva:hover .icono-servicio {
+  transform: scale(1.1);
+}
+
+.tarjeta-interactiva:hover .descripcion-oculta {
+  max-height: 200px;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.cta-servicios {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border: 1px solid #eaeaea;
+}
+
+.cta-servicios h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-servicios p {
+  margin-bottom: 2rem;
+  color: #555;
 }
