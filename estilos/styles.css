@@ -80,7 +80,7 @@ header nav ul li a:hover {
   border-bottom: 2px solid var(--azul-claro);
 }
 
-/* --- NUEVOS ESTILOS PARA EL INDEX --- */
+/* Nuevos estilos para el INDEX */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -314,9 +314,7 @@ h2::after {
   opacity: 0.6;
 }
 
-/* =========================================
-   DISEÑO RESPONSIVE (MÓVILES Y TABLETS) 
-   ========================================= */
+/* A partir de aca es para el diseño responsive */
 
 .menu-toggle {
   display: none;
@@ -388,9 +386,7 @@ h2::after {
   }
 }
 
-/* =========================================
-   PÁGINA DE SERVICIOS (INTERACTIVA)
-   ========================================= */
+/* Servicios */
 
 .pagina-servicios {
   padding-top: 2rem;
