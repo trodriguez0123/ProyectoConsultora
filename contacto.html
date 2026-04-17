@@ -44,32 +44,31 @@
       </nav>
     </header>
 
-    <main>
-      <div class="contacto-container">
-        <h2>Contacto</h2>
-        <div class="contacto-info">
-          <i
-            class="fa-solid fa-envelope-open-text"
-            style="
-              font-size: 3rem;
-              color: var(--azul-claro);
-              margin-bottom: 1rem;
-              display: block;
-              text-align: center;
-            "
-          ></i>
-          <p>
-            ¿Tienes un proyecto en mente o alguna consulta técnica? Estamos
-            listos para ayudarte.
-          </p>
+    <main class="contacto">
 
-          <div class="email-box">
-            <strong>Correo Electrónico:</strong><br />
-            <a href="mailto:femateos@uade.edu.ar">femateos@uade.edu.ar</a>
-          </div>
+    <section class="contacto-section">
+
+        <h2>NUESTRO CONTACTO</h2>
+        <div class="form-container">
+            <form>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Nombre" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-comment"></i>
+                    <textarea placeholder="Mensaje" required></textarea>
+                </div>
+                <button type="submit">ENVIAR MENSAJE</button>
+            </form>
         </div>
-      </div>
-    </main>
+    </section>
+
+</main>
 
     <footer class="footer-profesional">
       <div class="footer-content container">
