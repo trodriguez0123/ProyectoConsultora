@@ -24,7 +24,7 @@ En nuestros proyectos nos apoyamos en tecnologías modernas, arquitecturas sóli
 
 ¿Tienes un desafío tecnológico en mente o buscas una alianza estratégica? ¡Hablemos!
 
-* 🌐 **Sitio Web:** [www.logicsolutions.com](#)
+* 🌐 **Sitio Web:** [https://trodriguez0123.github.io/ProyectoConsultora/](#)
 * 📧 **Email:** [contacto@logicsolutions.com](mailto:contacto@logicsolutions.com)
 * 💼 **LinkedIn:** [Logic Solutions](#)
 
