@@ -1,115 +1,88 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logic Solutions - Innovación Tecnológica</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Logic Solutions</title>
+    <link rel="icon" href="./assets/logicLogo.png" type="image/png">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-    <link rel="stylesheet" href="./estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img
-          src="./assets/logicLogo.png"
-          alt="Logo de Logic Solutions"
-          class="logo"
-        />
-      </a>
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+   <header>
+        <a href="index.html">
+            <img src="./assets/logicLogo.png" alt="Logo de Logic Solutions" class="logo">
+        </a>    
+     <nav>
+         <ul>
+             <li><a href="index.html">Inicio</a></li>
+             <li><a href="servicios.html">Servicios</a></li>
+             <li><a href="proyectos.html">Portfolio</a></li>
+             <li><a href="nosotros.html">Nosotros</a></li>
+             <li><a href="contacto.html">Contacto</a></li>
+         </ul>
+    </nav>
+   </header> 
 
-      <button class="menu-toggle" aria-label="Abrir menú">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+   <main class="contacto-logic">
+  <div class="contacto-layout">
+    
+    <div class="contacto-texto">
+      <h2>Cuéntanos cómo<br><span>PODEMOS</span> ayudarte</h2>
+      <p class="tagline">Transformamos tus retos en soluciones lógicas de alto impacto.</p>
+    </div>
 
-      <nav>
-        <ul id="menu-links">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="proyectos.html">Portfolio</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Impulsamos tu Negocio con Soluciones Tecnológicas</h1>
-          <p>
-            Transformamos desafíos complejos en eficiencia digital. Consultoría
-            líder en desarrollo, nube y estrategia IT.
-          </p>
-          <a href="contacto.html" class="btn-principal">Solicitar Asesoría</a>
+    <div class="contacto-formulario">
+      <form action="#">
+        <div class="form-row full">
+          <label>Tu reto/objetivo<span>*</span></label>
+          <textarea rows="3" required placeholder="Describe brevemente lo que necesitas..."></textarea>
         </div>
-      </section>
-
-      <section class="sobre-nosotros container">
-        <div class="texto-seccion">
-          <h2>¿Quiénes Somos?</h2>
-          <p>
-            En <strong>Logic Solutions</strong>, somos un equipo de apasionados
-            por la tecnología dedicados a brindar soluciones de software
-            integrales. Ayudamos a empresas a optimizar sus procesos, adoptar
-            nuevas tecnologías y escalar sus operaciones.
-          </p>
-        </div>
-        <div class="imagen-seccion">
-          <img src="./assets/consultora-team.jpg" alt="Equipo de trabajo" />
-        </div>
-      </section>
-
-      <section class="servicios-destacados container">
-        <h2>Nuestros Pilares</h2>
-        <div class="servicios-grid">
-          <div class="servicio-card">
-            <img
-              src="./assets/edicion-de-codigo.png"
-              alt="Icono de desarrollo web"
-              class="icono-servicio"
-            />
-            <h3>Desarrollo Web</h3>
-            <p>Sitios y aplicaciones modernas, rápidas y escalables.</p>
+        
+        <div class="form-row half-group">
+          <div class="form-group">
+            <label>Nombre<span>*</span></label>
+            <input type="text" required>
           </div>
-          <div class="servicio-card">
-            <img
-              src="./assets/cloud-upload-alt.png"
-              alt="Icono de nube"
-              class="icono-servicio"
-            />
-            <h3>Soluciones Cloud</h3>
-            <p>Migración y optimización de infraestructura en la nube.</p>
-          </div>
-          <div class="servicio-card">
-            <img
-              src="./assets/consultor.png"
-              alt="Icono de consultoría"
-              class="icono-servicio"
-            />
-            <h3>Consultoría IT</h3>
-            <p>Estrategia tecnológica para potenciar tu crecimiento.</p>
+          <div class="form-group">
+            <label>Apellido<span>*</span></label>
+            <input type="text" required>
           </div>
         </div>
-        <div class="centrar-boton">
-          <a href="servicios.html" class="btn-secundario"
-            >Ver Todos los Servicios</a
-          >
+
+        <div class="form-row half-group">
+          <div class="form-group">
+            <label>Email<span>*</span></label>
+            <input type="email" required>
+          </div>
+          <div class="form-group">
+            <label>Empresa</label>
+            <input type="text">
+          </div>
         </div>
-      </section>
-    </main>
+
+        <div class="form-row full">
+          <label>País<span>*</span></label>
+          <select required>
+            <option value="" disabled selected>Seleccione un país</option>
+            <option value="ar">Argentina</option>
+            <option value="mx">México</option>
+            <option value="es">España</option>
+            <option value="co">Colombia</option>
+            <option value="cl">Chile</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-logic-submit">CONTACTAR</button>
+      </form>
+    </div>
+  </div>
+</main>
 
     <footer class="footer-profesional">
       <div class="footer-content container">
@@ -122,6 +95,8 @@
           <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="proyectos.html">Portfolio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ul>
         </div>
@@ -130,13 +105,5 @@
         <p>&copy; 2026 LOGIC SOLUTIONS. Todos los derechos reservados.</p>
       </div>
     </footer>
-
-    <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const menuLinks = document.getElementById("menu-links");
-      menuToggle.addEventListener("click", () => {
-        menuLinks.classList.toggle("active");
-      });
-    </script>
-  </body>
+</body>
 </html>
