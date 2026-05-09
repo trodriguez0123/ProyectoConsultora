@@ -589,3 +589,172 @@ main.contacto .linea {
   margin-bottom: 2rem;
   color: #555;
 }
+
+.portfolio {
+  background-color: #f4f7f9; /* Fondo gris azulado muy suave */
+  border-radius: 12px; /* Opcional: suaviza las esquinas del contenedor si no ocupa toda la pantalla */
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+/* 
+   Estilos para el portfolio 
+    */
+.portfolio .subtitulo-portfolio {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--azul-claro);
+  font-size: 1.5rem;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.portfolio-item {
+  background-color: var(--blanco);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #eaeaea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(37, 69, 101, 0.15);
+  border-color: var(--azul-claro);
+}
+
+.portfolio-item img {
+  width: auto;
+  height: 300px; /* Con esto lo que hago es que lasf otos tengan la misma altura */
+  object-fit: cover; /* Evita que las fotos se deformen */
+  border-bottom: 4px solid var(--azul-claro);
+}
+
+.portfolio-info {
+  padding: 1.8rem;
+  flex-grow: 1;
+}
+
+.portfolio-info h3 {
+  font-size: 1.3rem;
+  color: var(--azul-oscuro);
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.portfolio-info ul {
+  list-style-type: none; /* Aca le saque las viñetas que traen por defecto */
+  padding: 0;
+}
+
+.portfolio-info ul li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  color: #555;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Le agrego una flecha decorativa */
+.portfolio-info ul li::before {
+  content: "►";
+  position: absolute;
+  left: 0;
+  color: var(--azul-claro);
+  font-size: 0.8rem;
+  top: 2px;
+}
+
+/*
+   Estilos para la seccion equipo
+   */
+
+.equipo {
+    padding-top: 4rem;
+    padding-bottom: 6rem; /* Espacio para que no choque con el footer */
+}
+
+.subtitulo-equipo {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--azul-claro);
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.equipo-card {
+    background-color: var(--blanco);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s ease;
+}
+
+.equipo-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--azul-claro);
+    box-shadow: 0 15px 30px rgba(50, 119, 179, 0.1);
+}
+
+.foto-container {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%; 
+    overflow: hidden;
+    border: 4px solid var(--azul-claro);
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.equipo-info h3 {
+    color: var(--azul-oscuro);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.equipo-info p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+
+.github-link {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: "Orbitron", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: var(--azul-claro);
+}
+
+.github-link i {
+    margin-right: 8px;
+}

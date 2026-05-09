@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto - Logic Solutions</title>
+    <title>Logic Solutions - Innovación Tecnológica</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,31 +45,71 @@
       </nav>
     </header>
 
-    <main class="contacto">
-
-    <section class="contacto-section">
-
-        <h2>NUESTRO CONTACTO</h2>
-        <div class="form-container">
-            <form>
-                <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" placeholder="Nombre" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" placeholder="Email" required>
-                </div>
-                <div class="input-group">
-                    <i class="fas fa-comment"></i>
-                    <textarea placeholder="Mensaje" required></textarea>
-                </div>
-                <button type="submit">ENVIAR MENSAJE</button>
-            </form>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Impulsamos tu Negocio con Soluciones Tecnológicas</h1>
+          <p>
+            Transformamos desafíos complejos en eficiencia digital. Consultoría
+            líder en desarrollo, nube y estrategia IT.
+          </p>
+          <a href="contacto.html" class="btn-principal">Solicitar Asesoría</a>
         </div>
-    </section>
+      </section>
 
-</main>
+      <section class="sobre-nosotros container">
+        <div class="texto-seccion">
+          <h2>¿Quiénes Somos?</h2>
+          <p>
+            En <strong>Logic Solutions</strong>, somos un equipo de apasionados
+            por la tecnología dedicados a brindar soluciones de software
+            integrales. Ayudamos a empresas a optimizar sus procesos, adoptar
+            nuevas tecnologías y escalar sus operaciones.
+          </p>
+        </div>
+        <div class="imagen-seccion">
+          <img src="./assets/consultora-team.jpg" alt="Equipo de trabajo" />
+        </div>
+      </section>
+
+      <section class="servicios-destacados container">
+        <h2>Nuestros Pilares</h2>
+        <div class="servicios-grid">
+          <div class="servicio-card">
+            <img
+              src="./assets/edicion-de-codigo.png"
+              alt="Icono de desarrollo web"
+              class="icono-servicio"
+            />
+            <h3>Desarrollo Web</h3>
+            <p>Sitios y aplicaciones modernas, rápidas y escalables.</p>
+          </div>
+          <div class="servicio-card">
+            <img
+              src="./assets/cloud-upload-alt.png"
+              alt="Icono de nube"
+              class="icono-servicio"
+            />
+            <h3>Soluciones Cloud</h3>
+            <p>Migración y optimización de infraestructura en la nube.</p>
+          </div>
+          <div class="servicio-card">
+            <img
+              src="./assets/consultor.png"
+              alt="Icono de consultoría"
+              class="icono-servicio"
+            />
+            <h3>Consultoría IT</h3>
+            <p>Estrategia tecnológica para potenciar tu crecimiento.</p>
+          </div>
+        </div>
+        <div class="centrar-boton">
+          <a href="servicios.html" class="btn-secundario"
+            >Ver Todos los Servicios</a
+          >
+        </div>
+      </section>
+    </main>
 
     <footer class="footer-profesional">
       <div class="footer-content container">
@@ -94,7 +134,6 @@
     <script>
       const menuToggle = document.querySelector(".menu-toggle");
       const menuLinks = document.getElementById("menu-links");
-
       menuToggle.addEventListener("click", () => {
         menuLinks.classList.toggle("active");
       });
